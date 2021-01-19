@@ -23,7 +23,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./css/product.css" rel="stylesheet" />
+    <link href="./css/home.css" rel="stylesheet" />
   </head>
 
   <body class="text-center">
@@ -35,28 +35,33 @@
             <a class="nav-link" href="home.html">Home</a>
             <a class="nav-link" href="destinations.html">Destinations</a>
             <a class="nav-link" href="#">Contact</a>
+             <a class="nav-link" href="cart.html">
+              <img src="./images/LogoMakr-7H2rNO.png" alt="cart" style="width: 35px;">
+            </a>
           </nav>
         </div>
       </header>
 
       <main role="main" class="inner cover">
-  <form action="/products" method="POST">
+      <!-- <form class="form" action="/cart.html method="POST"> -->
+   <!-- Form code begins -->
+    <form method="post">
+      <div class="form-group"> <!-- Date input -->
+        <label class="control-label" for="date">Destination</label>
+        <input class="form-control" id="destinations" name="destinations" placeholder="Change your destination" type="text"/>
+         <br> </br>
+         <label class="control-label" for="date">Date</label>
+        
+        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+      </div>
+        <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+     
+     </form>
+     <!-- Form code ends -->   
 
-        <label for="id">Dest:</label><br>
-        <input type="text" id="id" name="id" disabled><br>
-
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre"><br>
-
-        <label for="precio">Precio (€):</label><br>
-        <input type="text" id="precio" name="precio"><br>
-
-        <label for="peso">Peso (Kg):</label><br>
-        <input type="text" id="peso" name="peso" value="Mondeo"><br>
-
-        <input type="submit" value="Guardar">
-    </form>
-      </main>
+       
+    <!-- </form> -->
+    </main>
 
       <footer class="mastfoot mt-auto">
       <div class="inner">
@@ -67,7 +72,7 @@
         </p>
       </div>
     </footer>
-    </div>
+   
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

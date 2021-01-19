@@ -19,10 +19,13 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
- <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <!-- Custom styles for this template -->
-    <link href="./css/home.css" rel="stylesheet" />
+    <link href="./css/cart.css" rel="stylesheet" />
   </head>
 
   <body class="text-center">
@@ -31,83 +34,136 @@
         <div class="inner">
           <h3 class="masthead-brand">TravelAndia</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="home.html">Home</a>
             <a class="nav-link" href="destinations.html">Destinations</a>
             <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link active" href="cart.html">
+              <img
+                src="./images/LogoMakr-7H2rNO.png"
+                alt="cart"
+                style="width: 35px"
+              />
+            </a>
           </nav>
         </div>
       </header>
 
       <main class="inner cover">
-        <table class="table table-success table-striped">
+        <h1>Shopping Cart</h1>
+        <table id="cart" class="table table-hover table-condensed">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">Name</th>
-              <th scope="col"></th>
-              <th scope="col">Price</th>
-              <th scope="col"></th>
+              <th style="width: 50%">Product</th>
+              <th style="width: 10%">Price</th>
+              <th style="width: 8%">Quantity</th>
+              <th style="width: 22%" class="text-center">Subtotal</th>
+              <th style="width: 10%"></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row">1</th>
-              <td>Balón Liga 2005</td>
-              <td>
-                <img
-                  src="./images/GettyImages-636982952-e1592703310661.jpg"
-                  alt=""
-                  class="w-50"
+              <td data-th="Product">
+                <div class="row">
+                  <div class="col-sm-2 hidden-xs">
+                    <img
+                      src="./images/Philippines-In-September-cover_17th-Feb.png.jpg"
+                      alt="..."
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-sm-10">
+                    <h4 class="nomargin">Philippines</h4>
+                    <p>
+                      Quis aute iure reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor
+                      sit amet.
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td data-th="Price">$1.99</td>
+              <td data-th="Quantity">
+                <input
+                  type="number"
+                  class="form-control text-center"
+                  value="1"
                 />
               </td>
-              <td>4.99</td>
-              <td>
-                <button type="button" class="btn btn-primary mb-2">
-                 View
+              <td data-th="Subtotal" class="text-center">1.99</td>
+              <td class="actions" data-th="">
+                <button>
+                  <a href="edit-product.html" class="btn btn-info btn-xl"
+                    ><i class="fa fa-refresh"></i>Edit</a
+                  >
                 </button>
-                <a href="edit-product.html" type="button" class="btn btn-success mb-2">Edit</a>
-                <button type="button" class="btn btn-danger mt-2">Delete</button>
+                <button class="btn btn-danger btn-xl">
+                  <i class="fa fa-trash-o">Delete</i>
+                </button>
               </td>
             </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-            <td>
-                <img
-                  src="./images/GettyImages-636982952-e1592703310661.jpg"
-                  alt=""
-                  class="w-50"
+              <tr>
+              <td data-th="Product">
+                <div class="row">
+                  <div class="col-sm-2 hidden-xs">
+                    <img
+                      src="./images/scotland.jpg"
+                      alt="..."
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-sm-10">
+                    <h4 class="nomargin">Scotland</h4>
+                    <p>
+                      Quis aute iure reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor
+                      sit amet.
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td data-th="Price">$1.99</td>
+              <td data-th="Quantity">
+                <input
+                  type="number"
+                  class="form-control text-center"
+                  value="1"
                 />
               </td>
-              <td>4.99</td>
-              <td>
-                <button type="button" class="btn btn-primary">
-                 View
+              <td data-th="Subtotal" class="text-center">1.99</td>
+              <td class="actions" data-th="">
+                <button>
+                  <a href="edit-product.html" class="btn btn-info btn-xl"
+                    ><i class="fa fa-refresh"></i>Edit</a
+                  >
                 </button>
-                 <a href="edit-product.html" type="button" class="btn btn-success mb-2">Edit</a>
-                <button type="button" class="btn btn-danger">Delete</button>
+                <button class="btn btn-danger btn-xl">
+                  <i class="fa fa-trash-o">Delete</i>
+                </button>
               </td>
             </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Jacob</td>
-               <td>
-                <img
-                  src="./images/GettyImages-636982952-e1592703310661.jpg"
-                  alt=""
-                  class="w-50"
-                />
-              </td>
-              <td>4.99</td>
-              <td>
-                <button type="button" class="btn btn-primary">
-                 View
-                </button>
-                <a href="edit-product.html" type="button" class="btn btn-success mb-2">Edit</a>
-                <button type="button" class="btn btn-danger">Delete</button>
-              </td>
-            </tr>
+        
           </tbody>
+          <tfoot>
+            <tr class="visible-xs">
+              <td class="text-center"><strong>Total $1500</strong></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" class="btn btn-warning"
+                  ><i class="fa fa-angle-left"></i> Continue Shopping</a
+                >
+              </td>
+              <td colspan="2" class="hidden-xs"></td>
+              <td class="hidden-xs text-center">
+                <strong>Total $1.99</strong>
+              </td>
+              <td>
+                <a href="#" class="btn btn-success btn-block"
+                  >Checkout <i class="fa fa-angle-right"></i
+                ></a>
+              </td>
+            </tr>
+          </tfoot>
         </table>
       </main>
 
@@ -133,11 +189,7 @@
     <script>
       $(function () {
         $(".btn-danger").click(function () {
-          // confirm nos permite mostrar un alert para que no se borre directamente sin que se pulse aceptar
           if (confirm("Are you sure to delete this product?")) {
-            // Ocultamos la fila a la que pertecene el botón pulsado
-            // Con this accedemos al elemento pulsado
-            // con parent accedemos al elemento superior
             $(this).parent().parent().hide();
           }
           return false;
