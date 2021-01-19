@@ -2,6 +2,12 @@
 
                             STATIC WEBSITE
 
+## [ACTUALIZACIÓN] Entrega 
+
+Tras cumplir el MVP de la tarea opte por añadir un shopping cart, ya que me parecia una idea mas optima para que el cliente edite y borre sus productos de la cesta, y no los productos del catalogo. Asi como, una pagina de contacto.
+
+
+
 ## Introducción
 
 Desarrollo de una web de productos donde un producto tiene la siguiente información:
